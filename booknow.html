@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking-Interface</title>
+	<link rel="stylesheet" type="text/css" href="stylebooking.css">
+
+	<style>
+		body{
+	margin: 0;
+	padding: 0;
+	background-color:black;
+}
+.booking{
+	width: 610px;
+	height: 580px;
+	background-color: transparent;
+	margin-left: 800px;
+	margin-top: -750px;
+	border-radius: 10px;
+	border-style: outset;
+	border-color: white;
+}
+.left{
+	padding: 8px 10px;
+	margin-left: 60px;
+	margin-top: 20px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	font-family: inherit;
+}
+.box{
+	padding: 8px 15px;
+	margin-left: 15px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	font-family: inherit;
+}
+.button{
+	padding: 8px 10px;
+	margin-left: 15px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+}
+.button:hover{
+	cursor: pointer;
+	background-image:linear-gradient(grey,black);
+	color: black;
+	font-size: 18px;
+	font-family: inherit;
+}
+.Submit{
+	padding: 8px 10px;
+	margin-left: 60px;
+	margin-top: 20px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+}
+.Submit:hover{
+	cursor: pointer;
+	background-image:linear-gradient(grey,black);
+	color: black;
+	font-size: 18px;
+	font-family: inherit;
+}
+.image{
+	width:700px;
+	height: 500px;
+	margin-bottom: 185px;
+	margin-left: -165px;
+}
+</style>
+</head>
+<body>
+	<h1 style="color: white; margin-left: 25px;">Beautify</h1>
+	<h4 style="color: white;margin-top: -27px; margin-left: 25px;">Feel the presence</h4>
+	<img style="width: 65px; height: 65px; margin-left: 120px; margin-bottom: 750px;" src="eye.png">
+	<img class="image" src="1.png">
+	<div class="booking">
+	<input class="left" type="text" name="name" placeholder="First Name">
+   	<input class="box" type="text" name="name" placeholder="Second Name"><br>
+   	<input class="left" type="text" name="branch" placeholder="Branch Name"><br>
+    <input style="padding: 10px 45px;" class="left" type="mail" name="mail" placeholder="Your mail address @gmail.com"><br>
+    <select class="left">
+    	<option>Gender</option>
+    	<option  value="a">Male</option>
+    	<option value="b">Female</option>
+    	<option value="c">Other</option>
+    </select><br>
+		<select class="left">
+       		<option>Category</option>
+       		<option value="a">Facials</option>
+       		<option value="b">Threading</option>
+       		<option value="c">Manicure</option>
+       		<option value="d">Pedicure</option>
+       		<option value="e">Haircut</option>
+       		<option value="f">Hairwash</option>
+       		<option value="g">Hair-Dye</option>
+       		<option value="h">Hair-Dressing</option>
+       		<option value="i">Make-up</option>
+       		<option value="j">Eye-brows</option>
+       		<option value="k">De-Tanning</option>
+       		<option value="l">Waxing</option>
+       		<option value="m">Mehendi</option>
+       		<option value="n">Bridal make-over</option>
+       	</select><br>
+   	<button class="left" >+91</button>
+   	<input class="box" type="number" name="number" placeholder="Enter Ph.no"><br>
+   	<input class="left" type="text" name="category" placeholder="DD/MM/YYYY"><br>
+   	<input class="left" type="time" id="my time">
+   	<button class="button" onclick="myfunction()">Default Time</button><br>
+   	<button class="Submit">Submit</button>
+   	<button class="button">Reset</button>
+
+
+   	<p id="demo"></p>
+   	<script>
+   		function myfunction(){
+   			document.getElementById("my time").value="10:00:00";
+   		}
+   	</script><br>
+
+   	
+	</div>
+	<img src="d2.png" style="margin-left: 1200px; margin-top: -650px;">
+   <form>
+
+   </form>
+
+</body>
+</html>
